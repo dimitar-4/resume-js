@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/github-information.js"></script>
     <title>Rosie</title>
 </head>
 <body>
@@ -48,8 +50,8 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid">
-        <div class="row bg-color-contact">
+    <section class="container-fluid github-section">
+        <div class="bg-color-contact">
             <div>
                 <h3 class="contact-heading uppercase text-center">View My GitHub Projects:</h3>
                 <h5 class="uppercase text-center">(or change the username to search for other user profiles)</h5>
@@ -57,8 +59,8 @@
 
             <div class="center-form">
                 <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()">
-                <div id="gh-user-data" class="clearfix"></div>
-                <div id="gh-repo-data" class="clearfix"></div>
+                <div id="gh-user-data"></div>
+                <div id="gh-repo-data"></div>
             </div>
         </div>
     </section>
